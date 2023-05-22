@@ -16,14 +16,15 @@ body {
 	flex: 0 0 auto;
 }
 
+
 .benefits{
+	display: flex;
+	margin-bottom: 120px;
 	max-width: 1614px;
 	margin: 0 auto;
 	padding: 0 15px;
-	display: flex;
-	margin-bottom: 120px;
   
-	.benefits-card {
+	&-card {
 	  display: flex;
 	  height: 70px;
 	  margin-top: 90px;
@@ -32,35 +33,45 @@ body {
 		  display: flex;
 		  height: 60px;
 		  margin: 0 auto;
-		  margin-right: 66px;
+		  margin-right: 46.6px;
+		  /* flex: 0 0 calc((100% - 140px) / 4 );*/
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+
+		  &:nth-child(1) {
+			width: 327px;
+		  }
+
+		  &:nth-child(2) {
+			width: 315px;
+		  }
+
+		  &:nth-child(3) {
+			width: 410px;
+		  }
 
 		  &:last-child {
+			width: 423px;
 			margin-right: 0;
+		  }
+
+		  &-number {
+			font-family: 'Unbounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 60px;
+            color: #0077FF;
+	        margin-right: 20px;
 		  }
 	  }
 	}
   }
   
-  .big-text {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 70px;
-	line-height: 60px;
-	color: #000000;
-	margin-right: 25px;
-  }
-  
-  .mini-text {
-	  width: 200px;
-	  height: 60px;
-	  font-family: 'Montserrat';
-	  font-style: normal;
-	  font-weight: 400;
-	  font-size: 14px;
-	  line-height: 20px;
-	  color: #4F4F4F;
-  }
+
 
 
 
